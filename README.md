@@ -38,6 +38,3 @@ All the corresponding .env files are included in the project.
 
 ## Information regarding use of FireBase
 Integrating Firebase with MongoDB not only simplifies implementation but also enhances scalability for audio streaming. Firebase's cloud-based architecture allows for automatic scaling based on demand, ensuring that my application can handle a growing number of users and audio files without compromising performance. By leveraging Firebase's scalable infrastructure alongside MongoDB's flexible data storage, I can confidently expand my application's capabilities to meet the needs of a growing user base.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
