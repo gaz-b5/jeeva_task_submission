@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+.input::file-selector-button {
+  background: linear-gradient(45deg, #0d7377, #0d8978, #15ffe0);
+  background-size: 300%;
+  background-position: left;
+  border: none;
+  cursor: pointer;
+  transition: background-position 300ms;
+  border-radius: 8px;
+  color: #e4f9f5;
+}
+.input::file-selector-button:hover {
+  background-position: right;
+}
+.check_img {
+  width: 3em;
+}
+.audio_upload {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.upload_button {
+  width: 30% !important;
+  margin-bottom: 0 !important;
+  margin-left: 0.5em;
+  background: linear-gradient(45deg, #0d7377, #0d8978, #15ffe0);
+  background-size: 300%;
+  background-position: left;
+  border: none;
+  cursor: pointer;
+  transition: background-position 300ms;
+  border-radius: 8px;
+  color: #e4f9f5;
+}
+.progress_container {
+  color: #e4f9f5;
+  margin-left: 2em;
+}

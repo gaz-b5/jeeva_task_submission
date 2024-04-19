@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #212121;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #e4f9f5;
+}
+
+.circle_1,
+.circle_2,
+.circle_3 {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #e4f9f5;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.circle_1 {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+  opacity: 0.6;
+}
+.circle_2 {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+  opacity: 0.6;
+}
+.circle_3 {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.container:hover .circle_1,
+.container:hover .circle_2,
+.container:hover .circle_3 {
+  border: 6px solid var(--colour);
+  filter: drop-shadow(0 0 20px var(--colour));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login h2 {
+  font-size: 2em;
+  color: #e4f9f5;
+}
+.input_box {
+  position: relative;
+  width: 100%;
+}
+.input_box input,
+.input_box button {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #e4f9f5;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #e4f9f5;
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  margin-bottom: 1em;
+}
+
+.input_box button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(45deg, #0d7377, #0d8978, #15ffe0);
+  background-size: 300%;
+  background-position: left;
+  border: none;
+  cursor: pointer;
+  transition: background-position 300ms;
+}
+.input_box button[type="submit"]:hover {
+  background-position: right;
+}
+.input_box input::placeholder {
+  color: rgba(255, 255, 255, 0.49);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px; /* Add padding to the sides for spacing */
+  }
+
+  .login {
+    width: 100%; /* Set width to 100% for full width */
+  }
+
+  .input_box {
+    width: 100%; /* Set width to 100% for full width */
+  }
+  .circle_1,
+  .circle_2,
+  .circle_3 {
+    width: 700px;
+    height: 700px;
+  }
+}
