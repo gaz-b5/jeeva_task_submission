@@ -37,4 +37,5 @@ This project consists of two folders: `server` and `client`. The `server` folder
 All the corresponding .env files are included in the project.
 
 ## Information regarding use of FireBase
+Using MongoDB for storing audio files larger than 16mb is not possible in MongoDB alone, though it possible with the use of GridFS, it is not suitable for audio streaming. Thus, the use of Firebase.
 Integrating Firebase with MongoDB not only simplifies implementation but also enhances scalability for audio streaming. Firebase's cloud-based architecture allows for automatic scaling based on demand, ensuring that my application can handle a growing number of users and audio files without compromising performance. By leveraging Firebase's scalable infrastructure alongside MongoDB's flexible data storage, I can confidently expand my application's capabilities to meet the needs of a growing user base.
