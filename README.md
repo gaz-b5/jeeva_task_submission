@@ -1,7 +1,12 @@
 # Jeeva Ai Task Submission
 
 ## Description
+A full-stack web application with a full-fledged front end. The purpose of this application is to keep a record of audio files containing information about patients in a database (MongoDB) while the audio files themselves are stored in Firebase for streaming capabilities. Also displaying all the records in a convenient tabular format.
 This project consists of two folders: `server` and `client`. The `server` folder contains the backend Node.js application, while the `client` folder contains the frontend React application.
+
+## Images
+![Screenshot 2024-09-03 160548](https://github.com/user-attachments/assets/ec7acf63-2b45-4b2b-817c-0052ab34c6eb)
+
 
 ## Installation
 
